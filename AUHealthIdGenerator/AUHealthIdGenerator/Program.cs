@@ -9,6 +9,7 @@ namespace AUHealthIdGenerator
         static void Main()
         {
             ApplicationConfiguration.Initialize();
+            Application.Run(new MainForm());
         }
     }
 }
