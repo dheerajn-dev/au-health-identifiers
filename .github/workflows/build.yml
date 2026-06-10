@@ -23,10 +23,10 @@ jobs:
         dotnet-version: '10.0.x'
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore AUHealthIdGenerator/AUHealthIdGenerator.sln
 
     - name: Build
-      run: dotnet build --no-restore -c Release
+      run: dotnet build AUHealthIdGenerator/AUHealthIdGenerator.sln --no-restore -c Release
 
     - name: Publish single-file exe
       run: >
